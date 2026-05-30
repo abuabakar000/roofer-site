@@ -125,7 +125,7 @@ export default function ProcessSection({ leadData: passedLeadData }: { leadData?
                   borderColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}80`,
                   boxShadow: leadData.slug === "default" ? "" : `0 0 20px ${leadData.primaryColor}26`
                 }}
-                className={`w-[64px] h-[64px] md:w-[72px] md:h-[72px] shrink-0 rounded-full border border-zinc-700/60 bg-[#111318] flex items-center justify-center ${leadData.slug === "default" ? "text-amber-500 group-hover:border-amber-500/50 group-hover:shadow-[0_0_20px_rgba(107,158,46,0.15)]" : ""} transition-all duration-300`}
+                className={`w-[64px] h-[64px] md:w-[72px] md:h-[72px] shrink-0 rounded-full border border-zinc-700/60 bg-[#111318] flex items-center justify-center ${leadData.slug === "default" ? "text-amber-500 group-hover:border-amber-500/50 group-hover:shadow-[0_0_20px_rgba(132,204,22,0.15)]" : ""} transition-all duration-300`}
               >
                 <div className="scale-90 md:scale-100">
                   {step.icon}

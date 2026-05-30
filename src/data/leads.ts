@@ -34,7 +34,7 @@ export const defaultLead: LeadData = {
   slug: "default",
   title: "Elite Roofing",
   logo: "/logo.png",
-  primaryColor: "#6b9e2e",
+  primaryColor: "#84cc16",
   phone: "(306) 555-0123",
   address: "Your City, State & Surrounding Areas",
   email: "service@eliteroofing.com",
