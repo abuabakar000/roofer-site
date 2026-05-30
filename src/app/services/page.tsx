@@ -170,7 +170,7 @@ export default function ServicesPage() {
                 <div
                   key={service.id}
                   id={service.id}
-                  className="group relative bg-[#0c0e12] border border-zinc-800/60 rounded-2xl p-6 md:p-10 hover:bg-[#0f1116] hover:-translate-y-2 hover:border-amber-500/30 hover:shadow-[0_20px_40px_-15px_rgba(245,158,11,0.15)] transition-all duration-500 ease-out flex flex-col h-full overflow-hidden"
+                  className="group relative bg-[#0c0e12] border border-zinc-800/60 rounded-2xl p-6 md:p-10 hover:bg-[#0f1116] hover:-translate-y-2 hover:border-amber-500/30 hover:shadow-[0_20px_40px_-15px_rgba(107,158,46,0.15)] transition-all duration-500 ease-out flex flex-col h-full overflow-hidden"
                 >
                   {/* Ambient Hover Glow */}
                   <div className="absolute -top-32 -right-32 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0"></div>

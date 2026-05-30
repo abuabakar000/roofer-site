@@ -50,7 +50,7 @@ export default function ContactFormSection({ leadData }: ContactFormSectionProps
   };
 
   const isDefault = leadData.slug === "default";
-  const primaryThemeColor = isDefault ? "#f59e0b" : leadData.primaryColor;
+  const primaryThemeColor = isDefault ? "#6b9e2e" : leadData.primaryColor;
 
   return (
     <section className="py-12 relative z-10 bg-zinc-950">

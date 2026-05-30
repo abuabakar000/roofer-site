@@ -107,7 +107,7 @@ export default function ServicesSection({ leadData: passedLeadData }: { leadData
                 "--hover-border": leadData.slug === "default" ? "" : `${leadData.primaryColor}4d`,
                 "--hover-shadow": leadData.slug === "default" ? "" : `0 20px 40px -15px ${leadData.primaryColor}26`
               } as any}
-              className={`group relative bg-[#0c0e12] border border-zinc-800/60 rounded-xl p-6 md:p-8 hover:bg-[#0f1116] hover:-translate-y-2 ${leadData.slug === "default" ? "hover:border-amber-500/30 hover:shadow-[0_20px_40px_-15px_rgba(245,158,11,0.15)]" : "hover:border-[var(--hover-border)] hover:shadow-[var(--hover-shadow)]"} transition-all duration-500 ease-out flex flex-col h-full overflow-hidden z-10 ${idx >= 4 ? 'hidden lg:flex' : 'flex'}`}
+              className={`group relative bg-[#0c0e12] border border-zinc-800/60 rounded-xl p-6 md:p-8 hover:bg-[#0f1116] hover:-translate-y-2 ${leadData.slug === "default" ? "hover:border-amber-500/30 hover:shadow-[0_20px_40px_-15px_rgba(107,158,46,0.15)]" : "hover:border-[var(--hover-border)] hover:shadow-[var(--hover-shadow)]"} transition-all duration-500 ease-out flex flex-col h-full overflow-hidden z-10 ${idx >= 4 ? 'hidden lg:flex' : 'flex'}`}
             >
               {/* Ambient Hover Glow inside the tile */}
               <div

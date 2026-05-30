@@ -67,11 +67,11 @@ const features = [
 
 export default function WhyUsSection({ leadData: passedLeadData }: { leadData?: LeadData }) {
   const leadData = passedLeadData || getLeadData();
-  const primaryColor = leadData.primaryColor || "#f59e0b";
+  const primaryColor = leadData.primaryColor || "#6b9e2e";
 
   return (
     <section
-      style={{ "--primary-color": leadData.slug === "default" ? "#f59e0b" : leadData.primaryColor } as any}
+      style={{ "--primary-color": leadData.slug === "default" ? "#6b9e2e" : leadData.primaryColor } as any}
       className="bg-[#0b0c10] relative overflow-hidden"
     >
       {/* ── Main two-column row ── */}
@@ -164,7 +164,7 @@ export default function WhyUsSection({ leadData: passedLeadData }: { leadData?: 
                 backgroundColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}0d`,
                 boxShadow: leadData.slug === "default" ? "" : `0 0 20px ${leadData.primaryColor}26`
               }}
-              className={`shrink-0 w-14 h-14 md:w-20 md:h-20 rounded-full border ${leadData.slug === "default" ? "border-amber-500/20 bg-amber-500/5 shadow-[0_0_20px_rgba(245,158,11,0.15)]" : ""} flex items-center justify-center`}
+              className={`shrink-0 w-14 h-14 md:w-20 md:h-20 rounded-full border ${leadData.slug === "default" ? "border-amber-500/20 bg-amber-500/5 shadow-[0_0_20px_rgba(107,158,46,0.15)]" : ""} flex items-center justify-center`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +195,7 @@ export default function WhyUsSection({ leadData: passedLeadData }: { leadData?: 
                 backgroundColor: leadData.slug === "default" ? "" : leadData.primaryColor,
                 boxShadow: leadData.slug === "default" ? "" : `0 0 25px ${leadData.primaryColor}4d`
               }}
-              className={`w-full sm:w-auto whitespace-nowrap px-6 py-3.5 lg:px-10 lg:py-5 ${leadData.slug === "default" ? "bg-amber-500 hover:bg-amber-400 shadow-[0_0_25px_rgba(245,158,11,0.3)]" : "hover:brightness-110"} text-zinc-950 rounded-md text-[11px] lg:text-[13px] font-bold tracking-[0.2em] uppercase transition-all duration-300 flex items-center justify-center gap-3`}
+              className={`w-full sm:w-auto whitespace-nowrap px-6 py-3.5 lg:px-10 lg:py-5 ${leadData.slug === "default" ? "bg-amber-500 hover:bg-amber-400 shadow-[0_0_25px_rgba(107,158,46,0.3)]" : "hover:brightness-110"} text-zinc-950 rounded-md text-[11px] lg:text-[13px] font-bold tracking-[0.2em] uppercase transition-all duration-300 flex items-center justify-center gap-3`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.733.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
