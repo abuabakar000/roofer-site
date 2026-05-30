@@ -7,8 +7,8 @@ import ContactFormSection from "@/components/ContactFormSection";
 import { defaultLead } from "@/data/leads";
 
 export const metadata = {
-  title: "Schedule Service | ProPlumb",
-  description: "Contact us today to schedule your premium plumbing service. We offer 24/7 emergency response and expert solutions.",
+  title: "Schedule Service | Elite Roofing",
+  description: "Contact us today to schedule your premium roofing service. We offer 24/7 emergency response and expert solutions.",
 };
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
             <Image 
               src="/contact-hero.png"
               fill
-              alt="Schedule Plumbing Service"
+              alt="Schedule Roofing Service"
               className="object-cover object-center opacity-20 mix-blend-overlay"
               priority
             />
@@ -44,7 +44,7 @@ export default function ContactPage() {
             </h1>
             
             <p className="text-zinc-400 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
-              Ready to experience the ProPlumb difference? Contact us today to secure your priority appointment with our master technicians.
+              Ready to experience the Elite Roofing difference? Contact us today to secure your priority appointment with our master technicians.
             </p>
           </div>
         </section>

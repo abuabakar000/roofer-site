@@ -15,33 +15,33 @@ export default function ServicesSection({ leadData: passedLeadData }: { leadData
 
   const services = [
     {
-      title: leadData.services?.[0]?.title || "Drain Cleaning",
-      desc: leadData.services?.[0]?.desc || "Clogged drains don't stand a chance. We clear blockages fast and keep your pipes flowing smoothly.",
+      title: leadData.services?.[0]?.title || "Roof Inspections",
+      desc: leadData.services?.[0]?.desc || "Spot potential issues early. We perform detailed assessments of shingles, flashing, and structural integrity.",
       icon: <Waves strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
       title: leadData.services?.[1]?.title || "Leak Repair",
-      desc: leadData.services?.[1]?.desc || "From minor leaks to major issues, we find the source and fix it right the first time.",
+      desc: leadData.services?.[1]?.desc || "Identify and seal roof leaks instantly to prevent water damage and protect your structural timber.",
       icon: <Droplets strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
-      title: leadData.services?.[2]?.title || "Water Heater Services",
-      desc: leadData.services?.[2]?.desc || "Installation, repair, and maintenance for all types of water heaters. Hot water, always.",
+      title: leadData.services?.[2]?.title || "Complete Replacement",
+      desc: leadData.services?.[2]?.desc || "Premium, long-lasting roofing systems tailored to your home's unique architectural design.",
       icon: <Flame strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
-      title: leadData.services?.[3]?.title || "Pipe Repair & Replacement",
-      desc: leadData.services?.[3]?.desc || "Old, damaged, or corroded pipes? We replace them the right way—built to last.",
+      title: leadData.services?.[3]?.title || "Storm Damage Care",
+      desc: leadData.services?.[3]?.desc || "24/7 emergency response, shingle patching, and heavy-duty tarping after severe weather.",
       icon: <Wrench strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
-      title: leadData.services?.[4]?.title || "Fixture Installation",
-      desc: leadData.services?.[4]?.desc || "Sinks, faucets, toilets, and more—installed with precision and built for performance.",
+      title: leadData.services?.[4]?.title || "Gutter Installation",
+      desc: leadData.services?.[4]?.desc || "Custom seamless gutter systems engineered to safely divert water away from your foundation.",
       icon: <Bath strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
-      title: leadData.services?.[5]?.title || "Sump Pump Services",
-      desc: leadData.services?.[5]?.desc || "Protect your home from water damage with reliable sump pump solutions.",
+      title: leadData.services?.[5]?.title || "Proactive Maintenance",
+      desc: leadData.services?.[5]?.desc || "Extend the lifespan of your roof by clearing debris, moss, and sealing wear-and-tear.",
       icon: <ArrowDownToLine strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     }
   ];
@@ -57,7 +57,7 @@ export default function ServicesSection({ leadData: passedLeadData }: { leadData
         <div className="absolute inset-0 bg-gradient-to-b from-[#07090c] via-transparent to-[#07090c] z-10"></div>
 
         <Image
-          src="/services.webp"
+          src="/service-section.webp"
           alt="Premium Home Services"
           fill
           className="object-cover object-right grayscale-[15%] contrast-125"

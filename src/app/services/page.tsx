@@ -20,105 +20,105 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Premium Plumbing Services | ProPlumb",
-  description: "Explore our comprehensive range of high-end plumbing services, from emergency repairs to full luxury fixture installations.",
+  title: "Premium Roofing Services | Elite Roofing",
+  description: "Explore our comprehensive range of high-end roofing services, from emergency repairs to full luxury roof replacements.",
 };
 
 const detailedServices = [
   {
-    id: "drain-cleaning",
-    title: "Drain Cleaning & Clearing",
+    id: "roof-inspection",
+    title: "Roof Inspections & Assessments",
     icon: <Waves strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "Stubborn clogs and slow drains are no match for our advanced clearing technology. We completely eliminate blockages to restore perfect flow.",
+    desc: "Spot issues before they become expensive problems. We provide thorough assessments of shingle condition, flashing integrity, and potential leak points.",
     features: [
-      "High-pressure hydro-jetting",
-      "Video camera line inspections",
-      "Tree root removal",
-      "Preventative maintenance plans"
+      "Drone roof surveys",
+      "Acoustic water detection",
+      "Storm damage reports",
+      "Structural integrity checks"
     ]
   },
   {
     id: "leak-repair",
-    title: "Precision Leak Repair",
+    title: "Precision Roof Leak Repair",
     icon: <Droplets strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "Hidden leaks can cause catastrophic structural damage. We utilize non-invasive acoustic and thermal imaging to pinpoint and seal leaks instantly.",
+    desc: "Water intrusion can cause rapid, catastrophic damage to structural timber and ceilings. We identify and seal roof leaks instantly.",
     features: [
-      "Slab leak detection",
-      "Burst pipe emergency repair",
-      "Ceiling and wall leak tracing",
-      "Non-destructive acoustic tech"
+      "Acoustic moisture mapping",
+      "Emergency flashing seals",
+      "Drip tracing & sealing",
+      "Weather-resilient materials"
     ]
   },
   {
-    id: "water-heaters",
-    title: "Water Heater Systems",
+    id: "roof-replacement",
+    title: "Complete Roof Replacement",
     icon: <Flame strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "Never run out of hot water again. We install, repair, and maintain premium conventional and tankless water heating systems.",
+    desc: "Protect your investment with a premium, long-lasting roofing system. We install high-grade shingles, metal roofs, and flat systems built to last.",
     features: [
-      "Tankless system upgrades",
-      "Traditional tank replacements",
-      "Heating element repairs",
-      "Annual sediment flushing"
+      "Architectural shingles",
+      "Metal & flat roof options",
+      "Underlayment upgrades",
+      "LIFETIME craftsmanship warranty"
     ]
   },
   {
-    id: "pipe-replacement",
-    title: "Pipe Repair & Replacement",
+    id: "storm-damage",
+    title: "Storm Damage & Emergency Tarping",
     icon: <Wrench strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "Upgrade your property's plumbing infrastructure. We replace old, corroded, or dangerous piping with modern, high-grade materials.",
+    desc: "After severe weather, immediate protection is critical. Our 24/7 team responds rapidly to secure your roof and prevent further water intrusion.",
     features: [
-      "Whole-home repiping",
-      "Copper & PEX installations",
-      "Corrosion diagnostics",
-      "Code compliance upgrades"
+      "24/7 emergency response",
+      "Heavy-duty shrink wrapping",
+      "Hole patching & sealing",
+      "Insurance claim documentation"
     ]
   },
   {
-    id: "fixture-installation",
-    title: "Luxury Fixture Installation",
+    id: "gutter-installation",
+    title: "Premium Gutter Systems",
     icon: <Bath strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "Elevate your kitchen and bathrooms. We expertly install high-end sinks, architectural faucets, spa showers, and modern toilets.",
+    desc: "Improper drainage destroys foundations. We engineer and install custom seamless gutter systems designed to divert water safely.",
     features: [
-      "Rainfall shower systems",
-      "Touchless kitchen faucets",
-      "Freestanding tub plumbing",
-      "Smart toilet integration"
+      "Seamless aluminum gutters",
+      "Heavy-duty leaf guards",
+      "Custom downspout routing",
+      "Debris clearing & cleaning"
     ]
   },
   {
-    id: "sump-pumps",
-    title: "Sump Pump Solutions",
+    id: "roof-maintenance",
+    title: "Proactive Roof Maintenance",
     icon: <ArrowDownToLine strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "Protect your basement and foundation from devastating water damage with our heavy-duty, ultra-reliable sump pump systems.",
+    desc: "Extend the lifespan of your roof by decades. We clear damaging moss, clean out gutters, and secure loose components before they fail.",
     features: [
-      "Primary pump installation",
-      "Battery backup systems",
-      "Discharge line routing",
-      "Float switch calibration"
+      "Moss & algae treatments",
+      "Debris & leaf clearing",
+      "Flashing re-securing",
+      "Annual maintenance reports"
     ]
   },
   {
-    id: "garbage-disposal",
-    title: "Garbage Disposal Services",
+    id: "attic-ventilation",
+    title: "Attic Ventilation & Insulation",
     icon: <Trash2 strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "A jammed or leaking garbage disposal can disrupt your kitchen. We provide rapid repairs and install premium, quiet-operation disposal units.",
+    desc: "Poor airflow cooks shingles and causes dangerous ice dams. We calibrate and install balanced intake and exhaust ventilation systems.",
     features: [
-      "Jammed unit clearing",
-      "Motor replacement",
-      "Under-sink leak repair",
-      "High-HP unit installation"
+      "Ridge vent installation",
+      "Soffit ventilation tuning",
+      "Attic fan diagnostics",
+      "Ice dam prevention setup"
     ]
   },
   {
-    id: "sewer-line",
-    title: "Sewer Line Diagnostics & Repair",
+    id: "skylight-services",
+    title: "Skylight Maintenance & Care",
     icon: <Activity strokeWidth={1.5} className="w-8 h-8 text-amber-500" />,
-    desc: "Avoid costly backups with our comprehensive sewer line services. We offer trenchless repairs and thorough inspections to keep your main lines clear.",
+    desc: "Bring natural light into your home without worrying about leaks. We install, seal, and repair premium energy-efficient skylights.",
     features: [
-      "Main line clearing",
-      "Trenchless pipe repair",
-      "Video camera diagnostics",
-      "Sewer gas odor detection"
+      "Leak-proof flashing kits",
+      "Energy-star glass upgrades",
+      "Condensation diagnostics",
+      "Custom roof window installs"
     ]
   }
 ];
@@ -133,7 +133,7 @@ export default function ServicesPage() {
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-zinc-800/60">
           <div className="absolute inset-0 z-0 pointer-events-none">
             <Image
-              src="/services-hero.webp"
+              src="/service-page-hero.webp"
               fill
               alt="Premium Home Services"
               className="object-cover object-center opacity-30 mix-blend-overlay"
@@ -156,7 +156,7 @@ export default function ServicesPage() {
             </h1>
 
             <p className="text-zinc-400 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
-              From emergency interventions to full architectural pipe replacements, we deliver unparalleled craftsmanship and reliability across every facet of plumbing.
+              From emergency storm response to full architectural roof replacements, we deliver unparalleled craftsmanship and reliability across every facet of roofing.
             </p>
           </div>
         </section>

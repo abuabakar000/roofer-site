@@ -12,9 +12,9 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
   const desktopBg = leadData.heroBgImage || "/hero-bg.webp";
   const isPlumberHvac = desktopBg.includes("plumber-hvac-bg");
   const isHvac = desktopBg.includes("hvac");
-  const mobileBg = isPlumberHvac 
-    ? "/plumber-hvac-bg-mb.webp" 
-    : (isHvac ? "/hvac-mb.webp" : "/plumber-mb.webp");
+  const mobileBg = leadData.heroBgImage
+    ? (isPlumberHvac ? "/plumber-hvac-bg-mb.webp" : (isHvac ? "/hvac-mb.webp" : "/plumber-mb.webp"))
+    : "/hero-mb.webp";
   
   return (
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-zinc-950 overflow-hidden">

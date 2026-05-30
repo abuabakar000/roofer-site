@@ -23,27 +23,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 const locations = [
   {
     name: "Metropolis Downtown",
-    desc: "24/7 rapid response for high-rise commercial and luxury residential properties in the downtown core.",
+    desc: "24/7 rapid response for high-rise commercial and luxury residential roofing in the downtown core.",
     icon: <Building2 strokeWidth={1.5} className="w-6 h-6 text-amber-500" />,
-    features: ["Commercial Plumbing", "High-Rise Specialists", "Emergency Response"]
+    features: ["Commercial Roofing", "High-Rise Specialists", "Emergency Response"]
   },
   {
     name: "North Hills Estates",
-    desc: "Complete plumbing installations, architectural pipe routing, and premium fixture upgrades.",
+    desc: "Complete roofing installations, architectural shingle routing, and premium gutter upgrades.",
     icon: <Home strokeWidth={1.5} className="w-6 h-6 text-amber-500" />,
-    features: ["Luxury Fixtures", "Custom Remodels", "Water Filtration"]
+    features: ["Premium Shingles", "Custom Roofs", "Gutter Integration"]
   },
   {
     name: "Westside Valley",
-    desc: "Expert leak detection, tankless water heater installations, and comprehensive home diagnostics.",
+    desc: "Expert leak detection, skylight integrations, and comprehensive roof diagnostics.",
     icon: <Navigation strokeWidth={1.5} className="w-6 h-6 text-amber-500" />,
-    features: ["Leak Detection", "Tankless Systems", "Routine Maintenance"]
+    features: ["Leak Detection", "Skylight Installs", "Routine Maintenance"]
   },
   {
     name: "Southpoint County",
-    desc: "Advanced sewer line diagnostics, trenchless pipe repair, and reliable local plumbing solutions.",
+    desc: "Advanced attic ventilation diagnostics, flashing repair, and reliable local roofing solutions.",
     icon: <MapPin strokeWidth={1.5} className="w-6 h-6 text-amber-500" />,
-    features: ["Sewer Diagnostics", "Trenchless Repair", "Sump Pumps"]
+    features: ["Ventilation Care", "Flashing Repair", "Emergency Tarping"]
   }
 ];
 
@@ -114,7 +114,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ slug
           </h1>
           
           <p className="text-zinc-400 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
-            We bring our high-end, master plumbing services directly to your doorstep across the entire metropolitan region and surrounding counties.
+            We bring our high-end, master roofing services directly to your doorstep across the entire metropolitan region and surrounding counties.
           </p>
         </div>
       </section>
@@ -149,7 +149,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ slug
               </h2>
 
               <p className="text-zinc-400 text-base md:text-lg lg:text-xl font-light leading-relaxed max-w-xl">
-                Our local workshop is the heart of our operation. It's where our master plumbers prep for every mission to ensure your home gets the elite care it deserves.
+                Our local workshop is the heart of our operation. It's where our master roofers prep for every mission to ensure your home gets the elite care it deserves.
               </p>
             </div>
 
@@ -183,7 +183,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ slug
                     </h3>
 
                     <div className="flex flex-col gap-4">
-                      {["Local Dispatch", "Master Plumbers Only"].map((item, i) => (
+                      {["Local Dispatch", "Master Roofers Only"].map((item, i) => (
                         <div key={i} className="flex items-center gap-3">
                           <div 
                             style={{ backgroundColor: leadData.slug === "default" ? "" : leadData.primaryColor }}

@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const leadData = getLeadData(slug);
   return {
     title: `Contact Us | ${leadData.title}`,
-    description: `Get in touch with ${leadData.title} for professional plumbing services.`,
+    description: `Get in touch with ${leadData.title} for professional roofing services.`,
     icons: {
       icon: leadData.logo || "/logo.png",
     }
@@ -33,7 +33,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
             <Image 
               src="/contact-hero.png"
               fill
-              alt="Schedule Plumbing Service"
+              alt="Schedule Roofing Service"
               className="object-cover object-center opacity-20 mix-blend-overlay"
               priority
             />
