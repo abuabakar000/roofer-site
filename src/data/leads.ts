@@ -126,7 +126,7 @@ export const leads: Record<string, LeadData> = {
     logoHeight: 60,
     logoWidthMobile: 180,
     logoHeightMobile: 45,
-    primaryColor: "#0ea5e9",
+    primaryColor: "#84cc16",
     phone: "+13065810282",
     address: "6 Bothwell Crescent, Regina, SK S4R 5W5, Canada",
     email: "",
