@@ -56,12 +56,20 @@ export default function Navbar({ leadData: passedLeadData }: { leadData?: LeadDa
           {/* Logo */}
           <Link href={leadData.slug === "default" ? "/" : `/${leadData.slug}`} className="flex items-center relative z-[110]" onClick={() => setIsMobileMenuOpen(false)}>
             {leadData.logo ? (
-              <div className="relative h-10 w-40 md:h-12 md:w-48">
+              <div 
+                style={{
+                  "--logo-w-mobile": `${leadData.logoWidthMobile || leadData.logoWidth || 160}px`,
+                  "--logo-h-mobile": `${leadData.logoHeightMobile || leadData.logoHeight || 40}px`,
+                  "--logo-w-desktop": `${leadData.logoWidth || 192}px`,
+                  "--logo-h-desktop": `${leadData.logoHeight || 48}px`,
+                } as React.CSSProperties}
+                className="relative w-[var(--logo-w-mobile)] h-[var(--logo-h-mobile)] md:w-[var(--logo-w-desktop)] md:h-[var(--logo-h-desktop)]"
+              >
                 <Image 
                   src={leadData.logo} 
                   alt={leadData.title} 
                   fill 
-                  sizes="(max-width: 768px) 160px, 192px"
+                  sizes="(max-width: 768px) 300px, 400px"
                   className="object-contain object-left"
                   priority
                 />

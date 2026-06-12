@@ -2,6 +2,10 @@ export interface LeadData {
   slug: string;
   title: string;
   logo?: string;
+  logoWidth?: number;          // Desktop logo width
+  logoHeight?: number;         // Desktop logo height
+  logoWidthMobile?: number;    // Mobile logo width
+  logoHeightMobile?: number;   // Mobile logo height
   heroBgImage?: string; // Custom background image for the hero section
   primaryColor: string;
   phone: string;
@@ -63,6 +67,10 @@ export const leads: Record<string, LeadData> = {
     slug: "kk-roofing-inc",
     title: "KK Roofing Inc",
     logo: "/kk-roofing.png",
+    logoWidth: 240,
+    logoHeight: 60,
+    logoWidthMobile: 180,
+    logoHeightMobile: 45,
     phone: "+13065417992",
     address: "2 Weekes Crescent, Regina, SK S4R 6X7",
     email: "kk@roofing.com",
@@ -78,6 +86,10 @@ export const leads: Record<string, LeadData> = {
     slug: "aaa-maximum-roofing",
     title: "AAA MAXIMUM Roofing",
     logo: "/aaa-roofing.png",
+    logoWidth: 240,
+    logoHeight: 60,
+    logoWidthMobile: 180,
+    logoHeightMobile: 45,
     primaryColor: "#f97316",
     phone: "+1 306-513-8875",
     address: "944 Francis StMoose Jaw, SK S6H 3B2, Canada",
@@ -110,6 +122,10 @@ export const leads: Record<string, LeadData> = {
     slug: "masterworks-roofing",
     title: "Masterworks Roofing",
     logo: "/master-works.png",
+    logoWidth: 240,
+    logoHeight: 60,
+    logoWidthMobile: 180,
+    logoHeightMobile: 45,
     primaryColor: "#0ea5e9",
     phone: "+13065810282",
     address: "6 Bothwell Crescent, Regina, SK S4R 5W5, Canada",

@@ -31,12 +31,20 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
             {/* Logo Space - Placed according to user request */}
             <div className="mb-6 flex items-center h-10">
               {leadData.logo ? (
-                <div className="relative h-10 w-40">
+                <div 
+                  style={{
+                    "--logo-w-mobile": `${leadData.logoWidthMobile || leadData.logoWidth || 160}px`,
+                    "--logo-h-mobile": `${leadData.logoHeightMobile || leadData.logoHeight || 40}px`,
+                    "--logo-w-desktop": `${leadData.logoWidth || 160}px`,
+                    "--logo-h-desktop": `${leadData.logoHeight || 40}px`,
+                  } as React.CSSProperties}
+                  className="relative w-[var(--logo-w-mobile)] h-[var(--logo-h-mobile)] md:w-[var(--logo-w-desktop)] md:h-[var(--logo-h-desktop)]"
+                >
                   <Image 
                     src={leadData.logo} 
                     alt={leadData.title} 
                     fill 
-                    sizes="160px"
+                    sizes="300px"
                     className="object-contain object-left"
                   />
                 </div>
