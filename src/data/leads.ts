@@ -57,7 +57,70 @@ export const defaultLead: LeadData = {
 };
 
 export const leads: Record<string, LeadData> = {
-  "default": defaultLead
+  "default": defaultLead,
+  "kk-roofing-inc": {
+    ...defaultLead,
+    slug: "kk-roofing-inc",
+    title: "KK Roofing Inc",
+    logo: "/kk-roofing.png",
+    phone: "+13065417992",
+    address: "2 Weekes Crescent, Regina, SK S4R 6X7",
+    email: "kk@roofing.com",
+    heroHeading: "Elite Roofing in Regina",
+    highlightWord: "Roofing",
+    heroSubtext: "Providing master-level roofing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5",
+    customerCount: "200+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.0497191700942!2d-104.6027675!3d50.4960324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1f24bf125607%3A0xd9c18fadec3702c7!2sKK%20Roofing%20Inc!5e0!3m2!1sen!2sca!4v1781214159423!5m2!1sen!2sca"
+  },
+  "aaa-maximum-roofing": {
+    ...defaultLead,
+    slug: "aaa-maximum-roofing",
+    title: "AAA MAXIMUM Roofing",
+    logo: "/aaa-roofing.png",
+    primaryColor: "#f97316",
+    phone: "+1 306-513-8875",
+    address: "944 Francis StMoose Jaw, SK S6H 3B2, Canada",
+    email: "aaamaximumroofing@outlook.com",
+    heroHeading: "Elite Roofing in Moose Jaw",
+    highlightWord: "Roofing",
+    heroSubtext: "Providing master-level roofing craftsmanship to the Moose Jaw community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5",
+    customerCount: "200+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0603323954215!2d-105.56005660000001!3d50.4027132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531bdddd396c100d%3A0x2ea2287edfa9f958!2sAAA%20MAXIMUM%20Roofing!5e0!3m2!1sen!2s!4v1781214491983!5m2!1sen!2s"
+  },
+  "excel-roofing": {
+    ...defaultLead,
+    slug: "excel-roofing",
+    title: "Excel Roofing",
+    logo: "/excel-roofing.png",
+    primaryColor: "#0ea5e9",
+    phone: "+13062168576",
+    address: "600 Forget St, Regina, SK S4T 4X2, Canada",
+    email: "excel@roofing.com",
+    heroHeading: "Elite Roofing in Regina",
+    highlightWord: "Roofing",
+    heroSubtext: "Providing master-level roofing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "4.3",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.4984975679376!2d-104.6499974!3d50.469062799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e4fa75bc657%3A0x2271652b3f73d996!2sExcel%20Roofing!5e0!3m2!1sen!2s!4v1781214618129!5m2!1sen!2s"
+  },
+  "masterworks-roofing": {
+    ...defaultLead,
+    slug: "masterworks-roofing",
+    title: "Masterworks Roofing",
+    logo: "/master-works.png",
+    primaryColor: "#0ea5e9",
+    phone: "+13065810282",
+    address: "6 Bothwell Crescent, Regina, SK S4R 5W5, Canada",
+    email: "",
+    heroHeading: "Elite Roofing in Regina",
+    highlightWord: "Roofing",
+    heroSubtext: "Providing master-level roofing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "4",
+    customerCount: "150+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.24834599568!2d-104.6021808!3d50.49233549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1ff9ab4b36f5%3A0x645c2dcbbd725b72!2sMasterworks%20Roofing!5e0!3m2!1sen!2s!4v1781214771236!5m2!1sen!2s"
+  }
 };
 
 export function getLeadData(slug?: string): LeadData {
