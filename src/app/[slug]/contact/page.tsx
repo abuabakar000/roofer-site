@@ -3,7 +3,13 @@ import Image from "next/image";
 import MapSection from "@/components/MapSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getLeadData } from "@/data/leads";
+import { getLeadData, leads } from "@/data/leads";
+
+export async function generateStaticParams() {
+  return Object.keys(leads).map((slug) => ({
+    slug,
+  }));
+}
 import ContactFormSection from "@/components/ContactFormSection";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -31,7 +37,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
         <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden border-b border-zinc-800/60">
           <div className="absolute inset-0 z-0 pointer-events-none">
             <Image 
-              src="/contact-hero.png"
+              src="/contact-hero.webp"
               fill
               alt="Schedule Roofing Service"
               className="object-cover object-center opacity-20 mix-blend-overlay"

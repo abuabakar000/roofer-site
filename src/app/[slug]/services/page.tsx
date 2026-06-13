@@ -6,7 +6,13 @@ import ProcessSection from "@/components/ProcessSection";
 import MapSection from "@/components/MapSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getLeadData } from "@/data/leads";
+import { getLeadData, leads } from "@/data/leads";
+
+export async function generateStaticParams() {
+  return Object.keys(leads).map((slug) => ({
+    slug,
+  }));
+}
 import { 
   Waves, 
   Droplets, 

@@ -49,7 +49,7 @@ export default function LocationsPage() {
       <section className="relative min-h-[55vh] flex items-center justify-center overflow-hidden border-b border-zinc-800/60">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image 
-            src="/locations-hero.png"
+            src="/locations-hero.webp"
             fill
             alt="Cityscape Service Areas"
             className="object-cover object-center opacity-20 mix-blend-overlay"

@@ -21,7 +21,7 @@ export default function ContactPage() {
         <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden border-b border-zinc-800/60">
           <div className="absolute inset-0 z-0 pointer-events-none">
             <Image 
-              src="/contact-hero.png"
+              src="/contact-hero.webp"
               fill
               alt="Schedule Roofing Service"
               className="object-cover object-center opacity-20 mix-blend-overlay"

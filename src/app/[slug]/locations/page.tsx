@@ -4,7 +4,13 @@ import MapSection from "@/components/MapSection";
 import CtaSection from "@/components/CtaSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getLeadData } from "@/data/leads";
+import { getLeadData, leads } from "@/data/leads";
+
+export async function generateStaticParams() {
+  return Object.keys(leads).map((slug) => ({
+    slug,
+  }));
+}
 import { MapPin, Navigation, Building2, Home, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -69,7 +75,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ slug
       <section className="relative min-h-[55vh] flex items-center justify-center overflow-hidden border-b border-zinc-800/60">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image 
-            src="/locations-hero.png"
+            src="/locations-hero.webp"
             fill
             alt="Cityscape Service Areas"
             className="object-cover object-center opacity-20 mix-blend-overlay"
