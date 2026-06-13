@@ -129,7 +129,7 @@ export const leads: Record<string, LeadData> = {
     primaryColor: "#84cc16",
     phone: "+13065810282",
     address: "6 Bothwell Crescent, Regina, SK S4R 5W5, Canada",
-    email: "",
+    email: "masterworksroofingsask@gmail.com",
     heroHeading: "Elite Roofing in Regina",
     highlightWord: "Roofing",
     heroSubtext: "Providing master-level roofing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
