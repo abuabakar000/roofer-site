@@ -91,7 +91,14 @@ export default function ContactFormSection({ leadData }: ContactFormSectionProps
                 href={`mailto:${leadData.email}`}
                 className="text-white hover:text-white/80 transition-colors text-sm font-medium tracking-wide break-all"
               >
-                {leadData.email}
+                {leadData.email.includes("@") ? (
+                  <>
+                    {leadData.email.split("@")[0]}
+                    <br />@{leadData.email.split("@")[1]}
+                  </>
+                ) : (
+                  leadData.email
+                )}
               </a>
             </div>
           </div>

@@ -237,7 +237,14 @@ export default function Navbar({ leadData: passedLeadData }: { leadData?: LeadDa
                 style={{ "--hover-color": leadData.slug === "default" ? "" : leadData.primaryColor } as any}
                 className={`text-sm font-medium text-white/50 tracking-[0.2em] uppercase ${leadData.slug === "default" ? "hover:text-amber-500" : "hover:text-[var(--hover-color)]"} transition-colors break-all text-center max-w-full px-4`}
               >
-                {leadData.email}
+                {leadData.email.includes("@") ? (
+                  <>
+                    {leadData.email.split("@")[0]}
+                    <br />@{leadData.email.split("@")[1]}
+                  </>
+                ) : (
+                  leadData.email
+                )}
               </Link>
             </div>
           </div>
